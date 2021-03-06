@@ -1,10 +1,12 @@
 import './App.css';
-
+import Home from './Home';
+import NavBar from './Navbar';
 
 function App() {
   return (
     <div >
-     <h1>Hello Diego Sena</h1>
+     <NavBar />
+     <Home />
     </div>
   );
 }
