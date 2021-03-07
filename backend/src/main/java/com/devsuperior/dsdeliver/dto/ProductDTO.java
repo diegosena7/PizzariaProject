@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import com.devsuperior.dsdeliver.entities.Product;
 
+/*Classe para converter a entity em objeto, carrega os dados da entity para o controller*/
 public class ProductDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -20,7 +21,6 @@ public class ProductDTO implements Serializable{
 
 	//Construtor com argumentos
 	public ProductDTO(long id, String name, Double price, String description, String imageUri) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.price = price;
@@ -30,7 +30,6 @@ public class ProductDTO implements Serializable{
 	
 	//Faz a busca dos dados na entity
 	public ProductDTO(Product entity) {
-		super();
 		id = entity.getId();
 		name = entity.getName();
 		price = entity.getPrice();

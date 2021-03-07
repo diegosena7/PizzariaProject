@@ -18,7 +18,7 @@ public class ProductController {
 	@Autowired
 	private ProductService service;
 
-	//Retorna uma lista de produtos
+	//Retorna uma lista de produtos, usando o método get do HTTP
 	@GetMapping
 	public ResponseEntity<List<ProductDTO>> findAll() {
 		List<ProductDTO> list = service.findAll();
