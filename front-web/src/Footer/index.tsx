@@ -1,10 +1,11 @@
 import './styles.css';
-import {ReactComponent as Linkedin} from './linkedin.svg';
-import {ReactComponent as Instagram} from './instagram.svg';
+// import { ReactComponent as YouTube } from './youtube.svg';
+import { ReactComponent as Instagram } from './instagram.svg';
+import { ReactComponent as Linkedin } from './linkedin.svg';
 
-function Footer(){
-    return(
-        <footer className="main-footer">
+function Footer() {
+  return (
+    <footer className="main-footer">
             Desenvolvido por <a href="https://diegossena.com.br/" target="_new">
                 Diego Sena
             </a>
@@ -17,6 +18,7 @@ function Footer(){
                 <Instagram/>
             </a>
         </footer>
-    )
+  )
 }
+
 export default Footer;

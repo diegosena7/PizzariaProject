@@ -1,6 +1,6 @@
 .home-container {
-    padding-top: 100px;
-    height: calc(100vh - 254px);
+    padding-top: 30px;
+    height: calc(100vh - 184px);
   }
   
   .home-container h1 {
@@ -51,7 +51,7 @@
   }
   
   .home-image svg {
-    width: 100% !important;
+    width: 100%;
   }
   
   @media only screen and (max-width: 768px) {
@@ -84,12 +84,5 @@
   
     .home-image svg {
       width: 80%;
-    }
-  }
-  
-  @media (max-height: 700px) {
-    .home-container {
-      height: auto;
-      margin-bottom: 30px;
     }
   }
