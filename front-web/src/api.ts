@@ -3,6 +3,7 @@ import { OrderPayload } from "./Orders/types";
 
 const base_url = 'https://fred-deliver.herokuapp.com';
 
+
 const mapboxToken = process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX;
 
 export function fetchProducts(){
