@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { fetchProducts, saveOrder } from '../api';
+import Footer from '../Footer';
 import { checkIsSelected } from './helper';
 import OrderLocation from './OrderLocation';
 import OrderSummary from './OrderSummary';
@@ -24,10 +25,12 @@ function Orders(){
     
     fetchProducts()
       .then(response => setProducts(response.data))
-      .catch(error => console.log(error))
-
+      .catch(() => {
+        toast.warning('Erro ao buscar produtos');
+      })
   }, [])
 
+  //Função para selecionar os produtos na página de pedidos
   const handleSelectProduct = (product: Product) => {
     const isAlreadySelected = checkIsSelected(selectedProducts, product);
   
@@ -69,8 +72,8 @@ return(
         totalPrice={totalPrice}
         onSubmit={handleSubmit}
       />
+      <Footer/>
     </div>
   )
 }
-
 export default Orders;

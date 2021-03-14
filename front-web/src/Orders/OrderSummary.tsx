@@ -1,5 +1,6 @@
 import { formatPrice } from "./helper";
 
+//Recebe a qtidade de itens selecionados e o preço dos objetos
 type Props = {
   amount: number;
   totalPrice: number;
@@ -21,10 +22,7 @@ function OrderSummary({ amount, totalPrice, onSubmit }: Props){
           </span>
         </div>
 
-        <button 
-          className="order-summary-make-order"
-          onClick={onSubmit}
-        >
+        <button className="order-summary-make-order" onClick={onSubmit}>
           FAZER PEDIDO
         </button>
       </div>
